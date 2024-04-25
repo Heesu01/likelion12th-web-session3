@@ -1,9 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Introduction from './components/Introduction'
 
 function App() {
   return (
-    <div>develop 브랜치</div>
+    <div className="container">
+      <Introduction />
+    </div>
   );
 }
 
