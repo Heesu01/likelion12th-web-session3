@@ -1,10 +1,10 @@
 import './App.css';
-import Introduction from './components/Introduction'
+import Login from './components/Login'
 
 function App() {
   return (
     <div className="container">
-      <Introduction />
+      <Login />
     </div>
   );
 }

@@ -12,6 +12,7 @@ import fire from './images/fire.png'
 import runner from './images/runner.png'
 
 function AboutMe() {
+
   return (
     <div className="tab">
       <div className="project-info" data-text="01">
@@ -32,6 +33,7 @@ function AboutMe() {
           <a href="https://blog.naver.com/rulru0692">블로그</a>
           <a href="https://github.com/Heesu01">깃허브</a>
         </div>
+
       </div>
       <div className="project-right">
         <h1>-----FAVORITE-----</h1>
