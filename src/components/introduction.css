@@ -182,6 +182,14 @@ input[name=tabmenu] {
 .sns a:nth-child(3):before {background-color: #25D366;}
 .sns a:nth-child(4):before {background-color: #5e5e5e;}
 
+.like button{
+    background-color: #dbf0ff;
+    color: #0597ff;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 
 .project-right {

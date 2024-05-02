@@ -12,6 +12,11 @@ import fire from './images/fire.png'
 import runner from './images/runner.png'
 
 function AboutMe() {
+  
+  const [likeCount, setLikeCount] = React.useState(0);
+  const handleLikeClick = () => {
+    setLikeCount(likeCount +1 );
+  };
 
   return (
     <div className="tab">
@@ -33,7 +38,9 @@ function AboutMe() {
           <a href="https://blog.naver.com/rulru0692">블로그</a>
           <a href="https://github.com/Heesu01">깃허브</a>
         </div>
-
+        <div className="like">
+          <button onClick={handleLikeClick}>♥  {likeCount}</button>
+        </div>
       </div>
       <div className="project-right">
         <h1>-----FAVORITE-----</h1>
