@@ -1,11 +1,12 @@
+import { Fragment } from 'react';
 import './App.css';
 import Login from './components/Login'
 
 function App() {
   return (
-    <div className="container">
+    <Fragment>
       <Login />
-    </div>
+    </Fragment>
   );
 }
 

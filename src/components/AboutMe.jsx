@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './introduction.css';
 import img1 from './images/24.jpg'
 import trip from './images/trip.jpg'
@@ -11,9 +11,9 @@ import positive from './images/positive.png'
 import fire from './images/fire.png'
 import runner from './images/runner.png'
 
-function AboutMe() {
+const AboutMe = () => {
   
-  const [likeCount, setLikeCount] = React.useState(0);
+  const [likeCount, setLikeCount] = useState(0);
   const handleLikeClick = () => {
     setLikeCount(likeCount +1 );
   };

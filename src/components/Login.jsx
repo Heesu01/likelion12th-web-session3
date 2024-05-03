@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import './login.css';
 import Introduction from './Introduction.jsx';
 
@@ -26,20 +26,20 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <Fragment>
       {isLogin ? (
         <Introduction />
       ) : (
         <div className="contain">
           <h1>Login</h1>
-          <div className="inputbox">
+          <form className="inputbox">
             <input onChange={saveId} type="text" className="login_input" placeholder="ID" />
             <input onChange={savePw} className="login_input"  type="password" placeholder="Password" />
             <button onClick={handleLogin} type="button">로그인</button>
-          </div>
+          </form>
         </div>
       )}
-    </div>
+    </Fragment>
   );
 };
 
