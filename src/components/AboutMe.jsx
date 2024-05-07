@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './introduction.css';
 import img1 from './images/24.jpg'
 import trip from './images/trip.jpg'
@@ -11,7 +11,13 @@ import positive from './images/positive.png'
 import fire from './images/fire.png'
 import runner from './images/runner.png'
 
-function AboutMe() {
+const AboutMe = () => {
+  
+  const [likeCount, setLikeCount] = useState(0);
+  const handleLikeClick = () => {
+    setLikeCount(likeCount +1 );
+  };
+
   return (
     <div className="tab">
       <div className="project-info" data-text="01">
@@ -31,6 +37,9 @@ function AboutMe() {
           <a href="https://www.instagram.com/heesu01/">인스타</a>
           <a href="https://blog.naver.com/rulru0692">블로그</a>
           <a href="https://github.com/Heesu01">깃허브</a>
+        </div>
+        <div className="like">
+          <button onClick={handleLikeClick}>♥  {likeCount}</button>
         </div>
       </div>
       <div className="project-right">
