@@ -1,8 +1,10 @@
 import React, { Fragment, useState } from 'react';
 import './login.css';
 import Introduction from './Introduction.jsx';
+import { UserInfo } from './user.info.js';
 
-const storedUserInfo = JSON.parse(localStorage.getItem('userInfo'));
+localStorage.setItem('UserInfo', JSON.stringify(UserInfo));
+const storedUserInfo = JSON.parse(localStorage.getItem('UserInfo'));
 
 const Login = () => {
   const [id, setId] = useState('');
